@@ -6,7 +6,7 @@ function BordGame(amountCards){
     const $htmlCardGame = CardGame();//variavel recebendo o conteudo
     const $htmlContent = $htmlCardGame.repeat(amountCards)//propriedade repeat para repeit uma string
 
-    return `
+    return /*html*/ `
         <section class = "board-game">
             ${$htmlContent}
         </section>
