@@ -1,10 +1,10 @@
 import './style.css'
-import CardGame from './../../components/CardGame';
+import CardFrontBack from '../../components/CardFrontBack';
 
 function BordGame(amountCards){
 
-    const $htmlCardGame = CardGame();//variavel recebendo o conteudo
-    const $htmlContent = $htmlCardGame.repeat(amountCards)//propriedade repeat para repeit uma string
+    const $htmlCardFrontBack = CardFrontBack();
+    const $htmlContent = $htmlCardFrontBack.repeat(amountCards)
 
     return /*html*/ `
         <section class = "board-game">
