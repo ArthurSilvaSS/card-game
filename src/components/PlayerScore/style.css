@@ -13,4 +13,18 @@
     width: 14px;
     height: 14px;
     background-color: var(--color-fundo-player);
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.playerscore[data-points="1"] > .ponto:first-child{
+    background-color: var(--color-pontos);
+}
+.playerscore[data-points="2"]{
+    flex-direction: row-reverse;
+}
+.playerscore[data-points="2"] > .ponto:nth-child(n+2){
+    background-color: var(--color-pontos);
+}
+.playerscore[data-points="3"] > .ponto{
+    background-color: var(--color-pontos);
 }
