@@ -1,16 +1,22 @@
+import ArrowPlayer from "../../components/ArrowPlayer";
 import PlayerName from "../../components/PlayerName";
 import PlayerScore from "../../components/PlayerScore";
-import Vs from '../../components/Vs';
+import VsPlayer from '../../components/VsPlayer';
 import './style.css'
 
 function ScoreBoard (){
     return /*html*/`
-        <header class="score-board">
-            ${PlayerName("Player1")}
-            ${PlayerScore()}
-            ${Vs()}
-            ${PlayerScore()}
-            ${PlayerName("Player2")}
+        <header class="placar">
+            <div class="arrow">
+                ${ArrowPlayer()}
+            </div>
+            <div class="score-board">
+                ${PlayerName("Player1")}
+                ${PlayerScore(2)}
+                ${VsPlayer("")}
+                ${PlayerScore(1)}
+                ${PlayerName("Player2")}
+            </div>
         </header>
     
     `;

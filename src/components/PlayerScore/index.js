@@ -1,8 +1,8 @@
 import './style.css'
 
-function PlayerScore (){
+function PlayerScore (points = 0){
     return /*html*/ `
-        <div class="playerscore">
+        <div data-points="${points}" class="playerscore">
             <span class="ponto"></span>
             <span class="ponto"></span>
             <span class="ponto"></span>

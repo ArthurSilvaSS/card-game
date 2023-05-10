@@ -1,8 +1,8 @@
 import './style.css'
-function Vs (){
+function VsPlayer (name = 'Vs'){
     return /*html*/`
     <p class="vs">Vs</p>
     `; 
 }
 
-export default Vs;
+export default VsPlayer;
