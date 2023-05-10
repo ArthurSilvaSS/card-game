@@ -14,5 +14,4 @@ function BordGame(amountCards){
     `;
      
 }
-
 export default BordGame;
