@@ -6,17 +6,13 @@ import './style.css'
 
 function ScoreBoard (){
     return /*html*/`
-        <header class="placar">
-            <div class="arrow">
-                ${ArrowPlayer()}
-            </div>
-            <div class="score-board">
-                ${PlayerName("Player1")}
-                ${PlayerScore(2)}
-                ${VsPlayer("")}
-                ${PlayerScore(2)}
-                ${PlayerName("Player2")}
-            </div>
+        <header class="score-board">
+            ${ArrowPlayer(2)}
+            ${PlayerName("Player1")}
+            ${PlayerScore(1)}
+            ${VsPlayer("")}
+            ${PlayerScore(2)}
+            ${PlayerName("Player2")}
         </header>
     
     `;

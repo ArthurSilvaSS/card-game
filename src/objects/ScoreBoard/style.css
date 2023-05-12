@@ -1,14 +1,3 @@
-.placar{
-    width: 280px;
-    height: 70px;
-    margin: auto;
-    align-items: center;
-}
-.arrow{
-    width: 50px;
-    display: flex;
-
-}
 .score-board{
     display: flex;
     justify-content: space-evenly;
@@ -16,5 +5,4 @@
     padding-bottom: 2.5rem;
     gap: 6px;
     align-items: center;
-    margin-top: -25px;
 }
