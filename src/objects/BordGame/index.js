@@ -1,8 +1,8 @@
-import './style.css'
-import CardFrontBack from '../../components/CardFrontBack';
+import './style.css';
 import cards from './data';
+import CardFrontBack from '../../components/CardFrontBack';
 
-function BordGame(amountCards){
+function BordGame(){
     const hideCards = ($cardsActive) => {
         $cardsActive.forEach((card) => card.classList.remove('-active'));
     }
@@ -25,11 +25,11 @@ function BordGame(amountCards){
         }
     }
     const $htmlCardsList = cards.map((card) => CardFrontBack(card.icon, card.altIcon));
-    const $htmlCards = $htmlCardsList.join('');
+    const $Embaralhar = $htmlCardsList.sort( () => Math.random() - 0.5 ).join('');
 
     return /*html*/ `
         <section class = "board-game" onclick="boardGame.handleClick()">
-            ${$htmlCards}
+            ${$Embaralhar}
         </section>
     `;
 }
